@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>2)Project</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- z-10을 사용하여 side bar 보다 위에 있는 효과를 줌 적용하지않으면 밑에줄에 적용된 설정이 우선순위가 되어 side bar밑으로 가려진다 -->
+    <div class="fixed top-0 left-0 w-full z-10">
+        <!-- w-full(너비를 100%) 사용하여 필요한만큼만 적용하는게 아니고 전체너비의 적용 -->
+        <div class="flex h-12 items-center bg-gray-600">
+            <div class="w-60">
+                <h1 class="text-2xl text-white text-center">DASHBOARD</h1>
+            </div>
+            <form action="" class="grow">
+                <input type="text" class="w-96 h-10 px-4 outline-none" placeholder="Search">
+            </form>
+        </div>
+    </div>
+
+    <!-- SIDE BAR -->
+    <div class="fixed top-0 left-0 h-full w-60 border-r hidden lg:block bg-white">
+        <ul class="pt-20 pl-4 h-full">
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-200">Link</a>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-200">Link</a>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-200">Link</a>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-200">Link</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="max-w-5xl lg:ml-60 pt-20 px-4">
+        <!-- MESSAGE -->
+        <div class="bg-orange-100 border-l-4 border-l-orange-500 text-orange-700 p-4 mb-4">
+            <p class="font-bold">Be Warned</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nam eaque dolores quod earum vero doloremque
+                quae natus hic magnam, esse molestias animi, soluta, rem nisi a ducimus repellat eveniet!
+            </p>
+        </div>
+    
+        <div class="mb-4">
+            <h1 class="text-2xl">Board</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    
+    
+        <!-- DROPDOWN -->
+        <div class="mb-4 flex justify-end">
+            <div class="relative group">
+                <button class="border p-2 bg-gray-600 text-white hover:bg-gray-700">Dropdown</button>
+                <!-- right-0 : 오른쪽 기준으로 정렬 -->
+                <div class="absolute right-0 w-48 bg-white shadow hidden group-hover:block">
+                    <a href="#" class="block p-2 hover:bg-gray-200">Menu</a>
+                    <a href="#" class="block p-2 hover:bg-gray-200">Menu</a>
+                    <a href="#" class="block p-2 hover:bg-gray-200">Menu</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- BOARD -->
+        <!-- md:grid-cols-3 : 화면 크기 768px이상부터 3열 그 이하는 2열 -->
+        <!-- gap-4 : 1rem 크기의 간격 / 화면의 큰기에 따라 변경되지 않는 고정값-->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+            <div class="bg-gray-200 p-4 h-48">-</div>
+            <div class="bg-gray-200 p-4 h-48">-</div>
+            <div class="bg-gray-200 p-4 h-48">-</div>
+            <div class="bg-gray-200 p-4 h-48">-</div>
+            <div class="bg-gray-200 p-4 h-48">-</div>
+            <div class="bg-gray-200 p-4 h-48">-</div>
+            <div class="bg-gray-200 p-4 h-48">-</div>
+        </div>
+    
+        <!-- TABLE -->
+        <div class="mb-4">
+            <h1 class="text-2xl">Table</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <!-- w-full 메인의 너비와 같음 너비: 100% -->
+        <table class="w-full">
+            <thead class="border-b border-black">
+                <!-- th는 기본값이 가운데 정렬 -->
+                <tr class="text-left">
+                    <th scope="col">#</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                    <th scope="col">Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- td는 기본값이 왼쪽정렬 -->
+                <tr class="border-b">
+                    <td scope="row" class="font-bold">1</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="border-b">
+                    <td scope="row" class="font-bold">2</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="border-b">
+                    <td scope="row" class="font-bold">3</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+                <tr class="border-b">
+                    <td scope="row" class="font-bold">4</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="lg:ml-60 p-8 bg-gray-200 mt-12">
+        <p>Footer</p>
+    </footer>
+
+
+</body>
+</html>

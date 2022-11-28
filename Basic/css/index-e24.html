@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- # CSS Selector(선택자) -->
+  <!-- 특정 element를 선택한다 -->
+
+  <!-- <h1>element selector</h1>
+  <p>element의 이름으로 선택한다</p>
+
+  <style>
+    ul {
+      border: 1px solid;
+    }
+    li {
+      text-decoration: line-through;
+    }
+  </style>
+
+  <ul>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+  </ul> -->
+
+  <!-- <h1>class selector</h1>
+  <p>.class</p>
+
+  <style>
+    ul {
+      border: 1px solid;
+    }
+    .line-through {
+      text-decoration: line-through;
+    }
+    .gray {
+      color: #888;
+    }
+  </style>
+
+  <ul>
+    <li class="line-through">list item</li>
+    <li class="line-through gray">list item</li>
+    <li>list itme</li>
+  </ul> -->
+
+  <!-- <h1>id selector</h1>
+  <p>#id</p>
+
+  <style>
+    ul {
+      border: 1px solid;
+    }
+    #first {
+      text-decoration: line-through;
+    }
+  </style>
+  
+  <ul>
+    <li id="first">list item</li>
+    <li>list itme</li>
+    <li>list itme</li>
+  </ul> -->
+
+  <!-- 단축어 : .은 class/ #은 id를 의미
+  li.line-trough = <li class="line-trought"></li>
+  li#first = <li id="first"></li> -->
+
+
+  <!-- <h1>children selector</h1>
+  <p>parent children</p>
+
+  <style>
+    ul a {  
+      color: #000;
+    } 
+    /* li 아래 a tag에만 적용 */
+    li a {
+      text-decoration: none;
+    }  
+    /* li 아래 a tag에만 적용  */
+    
+    /* 가능 */
+    /* a {
+      color: #000;
+      text-decoration: none;
+    } */
+  </style>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="Link">Link</a>
+      </li>
+      <li>
+        <a href="Link">Link</a>
+      </li>
+      <li>
+        <a href="Link">Link</a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <!-- <h1>Q. element, class, children 선택자를 사용해서 만들어보세요</h1>
+  
+  <style>
+    ul {
+      border: 1px solid;
+    }
+    ul li {
+      text-transform: uppercase;  
+    }
+    .line-through {
+      text-decoration: line-through;
+    }
+    .gray {
+      color: #888;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    
+  </style>
+   
+  <h3>Beers &#127866;
+  </h3>
+  <ul>
+    <li>Heineken</li>
+    <li class="line-through gray">Guinness</li>
+    <li>Ashhi</li>
+    <li class="bold">Kloud</li>
+    <li>Cass</li>
+  </ul> -->
+
+  <!-- # pseudo class -->
+  <!-- 가상의(가짜) class -->
+
+  <!-- <h1>Pseudo class</h1>
+  <p>
+    선택자 뒤에 붙는 키워드이다.
+    선택된 요소의 특별한 상태를 나타낸다.
+  </p>
+
+  <style>
+    /* child(2) : 두번째 항목에 적용 */
+    li:nth-child(2) {
+      font-weight: bold;
+    }
+    li:nth-child(4) {
+      color: red;
+    }
+    /* 마우스로 가르키는 항목에 적용 */
+    li:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+
+  <ul>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+  </ul> -->
+
+  <!-- #CSS 단위(Unit) -->
+
+  <!-- <style>
+    ul {
+      font-size: 1.5rem;
+    }
+    .px {
+      /* 절대값 */
+      font-size: 16px;
+    }
+    .rem {
+      /* rem(root element) */
+      /* 1rem = 브라우저의 기본 글자크기(16px) */
+      font-size: 1rem;
+    }
+    .em {
+      /* em (element) */
+      /* 1em = 부모 엘리먼트의 글자크기 */
+      font-size: 1em;
+    } 
+    .percent {
+      /* 100% = 부모 엘리먼트의 글자크기 */
+      font-size: 100%;
+    }
+    .vw {
+      /* vw(viewport) width */
+      /* 10vw = viewport width의 10% */
+      font-size: 10vw;
+    }
+    .vh {
+      /* vh (viewport height) */
+      /* 10vw = viewport height의 10% */
+      font-size: 10vh;
+    }
+  </style>
+
+  <h1>CSS Unit</h1>
+
+  <ul>
+    <li class="px">font-size: 16px;</li>
+    <li class="rem">font-size: 1rem;</li>
+    <li class="em">font-size: 1em;</li>
+    <li class="percent">font-size: 100%;</li>
+    <li class="vw">font-size:10vw;</li>
+    <li class="vh">font-size:10vh;</li>
+  </ul> -->
+
+  <!-- <h1>Typography : Font (폰트)</h1>
+
+  <style>
+    .not-italic {
+      font-style: normal;
+    }
+    .italic{
+      font-style: italic;
+    }
+    .text-normal{
+      font-weight: 400;
+    }
+    .text-bold{
+      font-weight: 700;
+    }
+    .text-base{
+      font-size:  1rem;
+    }
+    .text-xl{
+      font-size: 1.5rem;
+    }
+  </style>
+
+  <ul>
+    <li class="not-italic">font style: normal</li>
+    <li class="italic">font style: italic</li>
+    <li class="text-normal">font weight: normal</li>
+    <li class="text-bold">font weight: bold</li>
+    <li class="text-base">font size: 1rem</li>
+    <li class="text-xl">font size: 1.5rem</li>
+  </ul> -->
+
+  <!-- <h1>Typography: Text</h1>
+
+  <style>
+    .text-left {
+      text-align: left;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .tracking-normal  {
+      /* normal = 0em */
+      letter-spacing: 0em;
+    }
+    .tracking-widest  {
+      letter-spacing: 0.1em;
+    }
+    .leading-none {
+      /* leading : 줄간격 */
+      line-height: normal;
+    }
+    .leading-8 {
+      line-height: 2rem;
+    }
+  </style>
+
+  <ul>
+    <li class="text-left">text align: left</li>
+    <li class="text-center">text align: center</li>
+    <li class="text-right">text align: right</li>
+    <li class="tracking-normal">letter spacing: normal</li>
+    <li class="tracking-widest">letter spacing: 0.1em</li>
+    <li class="leading-none">line height: <br> normal</li>
+    <li class="leading-8">line height: <br> 2rem</li>
+  </ul> -->
+
+  <!-- <h1>Q. Text</h1>
+
+  <style>
+    .text-center {
+      text-align: center;
+    }
+    .text1 {
+      text-align: center; font-size: 10; line-height: 2rem;
+    }
+    .text2 {
+      text-align: center; font-style: italic;
+    }
+  </style>
+
+  <h2 class="text-center">GUINNESS</h2>
+  
+    <p class="text1" >Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. In delectus assumenda quae amet.<br> Deleniti nesciunt nobis temporibus repellendus ab similique asperiores mollitia quisquam, at dolores! Sapiente magnam minima autem commodi!</p>
+    <p class="text2"> - Dublin, Ireland</p>
+  -->
+
+
+
+  <!-- 선생님 방식
+  <style>
+    .text-left {
+      text-align: left;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .tracking-normal  {
+      /* normal = 0em */
+      letter-spacing: 0em;
+    }
+    .tracking-widest  {
+      letter-spacing: 0.1em;
+    }
+    .leading-none {
+      /* leading : 줄간격 */
+      line-height: normal;
+    }
+    .leading-8 {
+      line-height: 2rem;
+    }
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+    .text-bold {
+      font-weight: bold;
+    }
+    .italic {
+      font-style: italic;
+    }
+  </style>
+
+  <p class="text-center tracking-widest text-uppercase  text-bold ">Guinness</p>
+  <p class="text-center tracking-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptas dolorum voluptates ea excepturi consectetur nobis rerum sunt enim. Quis laboriosam fuga voluptatibus deleniti placeat voluptatum velit ad quo. Eius.</p>
+  <p class="text-center italic"> - Dublin, Ireland</p> -->
+
+  <!-- <h1>Color 표기법</h1>
+
+  <style>
+    li:first-child {
+      /* name */
+      color: red;
+    }
+    li:nth-child(2) {
+      /* rgb (red green blue) */
+      /* 각각 0 - 255까지의 값을 갖는다 */
+      color: rgb(255 0 0);
+    }
+    li:nth-child(3) {
+      /* rgba (red green bule / alpha) */
+      /* alpha = opacity (투명도) */
+      /* 0 (완전 투명) ~ 1 (완전 불투명) */
+      color: rgba(255 0 0 / 0.5);
+    }
+    li:nth-child(4) {
+      /* hex color (hexadecimal, 16진수) */
+      /* 0-9, a-f */
+      /* #rrggbb */
+      color: #ff0000;
+    }
+    li:last-child {
+      /* 3hex color */
+      /* rgb */
+      color: #f00;
+    }
+  </style>
+
+  <ul>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+  </ul> -->
+
+  <!-- <h1>Color</h1>
+  <p>color, background-color</p>
+
+  <style>
+    /* odd : 홀수 child / even : 짝수 child */
+    .item:nth-child(odd) {
+      /* 글자색 기본값 black */
+      color: black;
+      /* background-color 기본값이 transparent(투명) */
+      /* background-color element의 색상 */
+      background-color: transparent;
+    }
+    .item:nth-child(even) {
+      color: #fff;
+      background-color: #000;
+    }
+  </style>
+
+  <div class="container">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div> -->
+
+  <!-- <h1>상속</h1>
+  <p>Typography, color inherits</p>
+
+  <style>
+    ul {
+      border: 1px solid;
+      font-style: italic;
+      color: #888;
+    }
+
+    li:nth-child(2) {
+      border: inherit;
+      /* color: initial;
+      font-style: initial; */
+      color: #000;
+      font-style: normal;
+    }
+  </style>
+
+  <div class="container">
+    <ul>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+  </div> -->
+
+  <!-- <h1>border </h1>
+
+  <style>
+    .item {
+      /* display 속성 중 가로로 배열/ 필요한 만큼만 배치 */
+      display: inline-block;
+    }
+    .border {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #000;
+      /* border: 1px solid #000; (줄여서 쓰는 방법) */
+    }
+    .border-t { 
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: #000;
+      /* border-top : 1px solid #000; (줄여서 쓰는 방법)  */
+    }
+    .border-b { 
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #000;
+      /* border-bottom : 1px solid #000; (줄여서 쓰는 방법) */
+    }
+    .border-x { 
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-left-color: #000;
+      /* border-left : 1px solid #000; (줄여서 쓰는 방법) */
+      
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: #000;
+      /* border-right : 1px solid #000; (줄여서 쓰는 방법) */
+    } 
+
+
+</style>
+<div class="container">
+  <div class="item border">border</div>
+  <div class="item border-t">border top</div>
+  <div class="item border-b">border bottom</div>
+  <div class="item border-x">border x</div>
+</div> -->
+
+<!-- <h1>Q. background-color, border</h1>
+
+<style>
+  .container {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .border-b {
+    border-bottom: 1px solid gold;
+  }
+
+  .text-gray {
+    color: #888;
+  }
+</style>
+
+
+<div class="container">
+  <h1 class="border-b">GUINNESS</h1>
+  <p class="text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore minima temporibus voluptas, odit velit quae soluta, corrupti animi dolores, aperiam doloribus aut repellendus. Nemo quam unde quibusdam nulla, nisi accusamus.</p>
+</div> -->
+
+<h1>Padding</h1>
+<p>element 내부의 공간</p>
+
+<style>
+  .item {
+    display: inline-block;
+    border: 1px dashed;
+  }
+
+  .p-2 {
+    padding: 0.5rem;
+
+  }
+  .pt-2 {
+    padding-top: 0.5rem;
+  } 
+  .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+</style>
+
+<div class="container">
+  <div class="item">padding 0</div>
+  <div class="item p-2">padding all</div>
+  <div class="item pt-2">padding top</div>
+  <div class="item px-2">padding left/right</div>
+</div>
+
+
+
+
+
+</body>
+</html>
